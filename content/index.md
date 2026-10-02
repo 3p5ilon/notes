@@ -1,5 +1,5 @@
 ---
-title: Ɛpsilon Notes
+title: Ɛnotes
 ---
 
 This is where I keep the things I'm learning, and the things I want to remember later.
