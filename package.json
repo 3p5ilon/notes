@@ -1,23 +1,24 @@
 {
-  "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "name": "notes",
+  "description": "Personal notes and things I'm learning, published with Quartz",
   "private": true,
   "version": "5.0.0",
   "type": "module",
-  "author": "jackyzha0 <j.zhao2k19@gmail.com>",
+  "author": "3p5ilon",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
+  "homepage": "https://3p5ilon.github.io/notes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/3p5ilon/notes.git"
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
-    "docs": "npx quartz build --serve -d docs",
+    "create": "npx quartz create",
+    "preview": "npx quartz build --serve",
+    "build": "npx quartz build",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
-    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "install-plugins": "npx tsx ./quartz/plugins/loader/install-plugins.ts",
     "prebuild": "npm run install-plugins"
   },
@@ -26,11 +27,7 @@
     "node": ">=22"
   },
   "keywords": [
-    "site generator",
-    "ssg",
-    "digital-garden",
-    "markdown",
-    "blog",
+    "notes",
     "quartz"
   ],
   "bin": {
@@ -69,6 +66,7 @@
     "@quartz-community/latex": "^1.0.0",
     "@quartz-community/note-properties": "^1.0.0",
     "@quartz-community/obsidian-flavored-markdown": "^1.0.0",
+    "@quartz-community/obsidian-plugin-excalidraw": "^1.0.0",
     "@quartz-community/og-image": "^1.0.0",
     "@quartz-community/ox-hugo": "^1.0.0",
     "@quartz-community/page-title": "^1.0.0",
